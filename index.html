@@ -10,11 +10,6 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
-
-	<script src="./assets/bootstrap/bootstrap.bundle.js" defer></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js"></script>
-	<script src="./assets/scripts.js"></script>
 </head>
 <body>
 <header class="top-header">
@@ -37,15 +32,24 @@
 			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
 		</div>
 		<div class="carousel-inner">
-			<div class="carousel-item active">
+			<picture class="carousel-item active">
+				<source srcset="./assets/images/slider/ryoji-iwata-480.webp" media="(min-width: 375px) and (max-width: 480px)" />
+				<source srcset="./assets/images/slider/ryoji-iwata-1024.webp" media="(min-width: 481px) and (max-width: 1024px)"/>
+				<source srcset="./assets/images/slider/ryoji-iwata.webp" media="(min-width: 1920px)"/>
 				<img src="./assets/images/slider/ryoji-iwata.webp" class="d-block w-100" alt="Ryoji Iwata de dos vue d'en haut, traversant un passage pieton au Japon">
-			</div>
-			<div class="carousel-item">
+			</picture>
+			<picture class="carousel-item">
+				<source srcset="./assets/images/slider/nicholas-green-480.webp" media="(min-width: 375px) and (max-width: 480px)" />
+				<source srcset="./assets/images/slider/nicholas-green-1024.webp" media="(min-width: 481px) and (max-width: 1024px)"/>
+				<source srcset="./assets/images/slider/nicholas-green.webp" media="(min-width: 1920px)"/>
 				<img src="./assets/images/slider/nicholas-green.webp" class="d-block w-100" alt="Deux copains dans une foule les bras en l'air pendant un concert à Paris">
-			</div>
-			<div class="carousel-item">
+			</picture>
+			<picture class="carousel-item">
+				<source srcset="./assets/images/slider/ceremonie-edward-bella-480.webp" media="(min-width: 375px) and (max-width: 480px)" />
+				<source srcset="./assets/images/slider/ceremonie-edward-bella-1024.webp" media="(min-width: 481px) and (max-width: 1024px)"/>
+				<source srcset="./assets/images/slider/ceremonie-edward-bella.webp" media="(min-width: 1920px)"/>
 				<img src="./assets/images/slider/ceremonie-edward-bella.webp" class="d-block w-100" alt="Deux époux en train de s'embrasser le jour de leur mariage sous les applaudissements des invités.">
-			</div>
+			</picture>
 		</div>
 		<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
 			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -157,4 +161,8 @@
 	</div>
 </section>
 </body>
+<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script> */
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" ></script>
+<script src="./assets/maugallery.js" ></script>
+<script src="./assets/scripts.js"></script>
 </html>
