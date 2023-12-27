@@ -227,6 +227,7 @@ form input {
 	border: solid 1px;
 	height: 2.5em;
 	margin-bottom: 20px;
+	padding-left: 15px;
 }
 
 form textarea {
@@ -237,6 +238,7 @@ form textarea {
 	line-height: 2.5em;
 	font-size: 1.2em;
 	margin-bottom: 20px;
+	padding-left: 15px;
 }
 input[type="submit"] {
 	background-color: #BEB45A;
